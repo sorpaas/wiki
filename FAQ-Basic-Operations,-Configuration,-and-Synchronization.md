@@ -70,7 +70,7 @@ By default, 64 states are kept.
 
 Warp sync extends previous versions of the protocol with full state snapshots. These snapshots can be used to quickly get a full copy of the state at a given block. Every 5,000 blocks, nodes will take a consensus-critical snapshot of that block's state. Any node can fetch these snapshots over the network, enabling a fast sync. These snapshots have been designed with out-of-order restoration in mind -- it isn't required to get any given chunk before another.
 
-To make sure you get the most recent snapshot available and warp sync very close to the top of the chain, Parity >=v1.10.1 supports the falg `--warp-barrier XYZ`. Replace XYZ with [the chain's latest block number](https://ethstats.net/) **-10K**, it should allow you to find some nodes. Example: if latest block number is 5,432,123 you should launch `parity --war-barrier 5422123`.
+To make sure you get the most recent snapshot available and warp sync very close to the top of the chain, Parity >=v1.10.1 supports the flag `--warp-barrier XYZ`. Replace XYZ with [the chain's latest block number](https://ethstats.net/) **-10K**, it should allow you to find some nodes. Example: if latest block number is 5,432,123 you should launch `parity --war-barrier 5422123`.
 
 
 See also [what is Parity's “warp” sync](http://ethereum.stackexchange.com/q/9991) at Ethereum Stack Exchange and read [the full specification at the Wiki here](https://wiki.parity.io/Warp-Sync-Snapshot-Format#manifest).
